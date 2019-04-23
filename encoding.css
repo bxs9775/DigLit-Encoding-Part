@@ -1,0 +1,23 @@
+#dna-key,#dna-disp,.text-unit{
+  display: inline-block;
+}
+
+.text-unit{
+  margin: 6px;
+}
+
+.code{
+  color: red;
+}
+
+.value{
+  text-align: center;
+}
+
+#dna-key{
+  width: 20%
+}
+
+#dna-disp{
+  width: 70%;
+}
