@@ -73,6 +73,7 @@ function displayChunked(num){
 }
 
 /* -------------- Setup functions -------------- */
+/*
 function setup(){
   dnaKey = d3.select('#dna-key');
   dnaDisp = d3.select('#dna-disp');
@@ -84,3 +85,4 @@ function setup(){
 }
 
 window.onload = setup;
+*/
