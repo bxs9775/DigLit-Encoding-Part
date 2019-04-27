@@ -1,5 +1,11 @@
 #dna-key,#dna-disp,.text-unit{
   display: inline-block;
+  vertical-align: text-top;
+}
+
+/* Reintroduces the behavior where the code moves up when letters fill in */
+#dna-disp div{
+  vertical-align: bottom;
 }
 
 .text-unit{
@@ -12,6 +18,7 @@
 
 .value{
   text-align: center;
+  /*border-bottom: 1px solid black;*/
 }
 
 #dna-key{

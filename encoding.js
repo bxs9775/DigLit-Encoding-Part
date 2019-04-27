@@ -62,10 +62,14 @@ function displayArray(arr){
 function chunks(size,str){
   var length = str.length;
   var chunkArray = [];
-  for(var i = 0; i <= length; i+=size){
+  for(var i = 0; i < length; i+=size){
     chunkArray.push(str.substring(i,i+size));
   }
   return chunkArray;
+}
+
+function displayChunked(num){
+  displayArray(chunks(num,encodedMsg))
 }
 
 /* -------------- Setup functions -------------- */
@@ -73,9 +77,10 @@ function setup(){
   dnaKey = d3.select('#dna-key');
   dnaDisp = d3.select('#dna-disp');
   
+  console.dir(encodedMsg);
   console.dir(chunks(1,encodedMsg));
   console.dir(chunks(3,encodedMsg));
-  displayArray(chunks(3,encodedMsg));
+  displayChunked(3);
 }
 
 window.onload = setup;
