@@ -18,6 +18,12 @@
     
     <script  type="application/javascript">
       function setup(){
+        if(!window.XENO_VARS){
+          window.XENO_VARS = {};
+        }
+        
+        window.XENO_VARS.decodedMsg = '';
+        
         dnaKey = d3.select('#dna-key');
         dnaDisp = d3.select('#dna-disp');
         displayChunked(3);
