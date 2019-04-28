@@ -78,18 +78,3 @@ function chunks(size,str){
 function displayChunked(num){
   displayArray(chunks(num,encodedMsg))
 }
-
-/* -------------- Setup functions -------------- */
-/*
-function setup(){
-  dnaKey = d3.select('#dna-key');
-  dnaDisp = d3.select('#dna-disp');
-  
-  console.dir(encodedMsg);
-  console.dir(chunks(1,encodedMsg));
-  console.dir(chunks(3,encodedMsg));
-  displayChunked(3);
-}
-
-window.onload = setup;
-*/
