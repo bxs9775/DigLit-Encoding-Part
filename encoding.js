@@ -26,9 +26,16 @@ function clearAll(){
 function updateVals(d){
   console.dir(d);
   console.dir(this);
+  
   let newText = this.value | ' ';
   dnaDisp.selectAll(`.val-${d}`)
     .text(this.value);
+  
+  let values = '';
+  dnaDisp.selectAll('.text-unit .value').each(function(d){
+    values += d3.select(this).text();
+  });
+  window.XENO_VARS.decodedMsg = values;
 }
 
 function displayArray(arr){
